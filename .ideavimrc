@@ -1,0 +1,57 @@
+""" set relativenumber
+set relativenumber
+""" set currenct row number
+set number
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+""" set leader is space.
+let mapleader =' '
+
+""" turn off search highlight until the next search
+nnoremap <leader>/ :noh<CR>
+
+""" reload vim setting.(this setting)
+nnoremap <leader><F5> :source ~/.ideavimrc<CR>
+
+""" new element
+nnoremap <leader>ni NewElement<CR>
+
+""" Editor Font Size
+nnoremap = :action EditorIncreaseFontSize<CR>
+nnoremap - :action EditorDecreaseFontSize<CR>
+:noremap <leader>? :action GotoAction<CR>
+
+""" action mapping
+nnoremap <leader>rm :action RefactaoringMenu<CR>
+nnoremap <leader>rt :action Refactorings.QuickListPopupAction<CR>
+""" Tab
+nnoremap <leader>cat :action CloseAllEditorsButActive<CR>
+nnoremap <leader>cut :action CloseActiveTab<CR>
+nnoremap <leader>g1 :action GoToTab1<CR>
+nnoremap <leader>g2 :action GoToTab2<CR>
+nnoremap <leader>g3 :action GoToTab3<CR>
+nnoremap <leader>g4 :action GoToTab4<CR>
+nnoremap <leader>g5 :action GoToTab5<CR>
+nnoremap <leader>g6 :action GoToTab6<CR>
+nnoremap <leader>g7 :action GoToTab7<CR>
+nnoremap <leader>g8 :action GoToTab8<CR>
+nnoremap <leader>g9 :action GoToTab9<CR>
+""" GOTO CODE
+nnoremap <leader>gd :action GotoDeclaration<CR>
+nnoremap <leader>gi :action ReSharperGotoImplementation<CR>
+""" GOTO MENU
+nnoremap <leader>gm :action GoToMenu<CR>
+""" SHOW FILE PATH IN VIEW
+nnoremap <leader>sf :action LocateInSolutionView<CR>
+""" Show intention actions
+nnoremap <leader>wj :action ShowIntentionActions<CR>
+""" Rename
+nnoremap <leader>rn :action RenameElement<CR>
+""" Extra
+"""nnoremap <leader>rf :action ExtractMethod<CR>
+"""nnoremap <leader>rc :action ExtractClass<CR>
+"""nnoremap <leader>ri :action ExtractInterface<CR>
+"""nnormeap <leader>xm :action ExtractToolsGroup<CR>
